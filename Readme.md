@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Белоусов](https://up.htmlacademy.ru/htmlcss/39/user/2165163).
-* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
-* Сайт: [Проект сайта "Седона"](https://bnvnik.github.io/2165163-sedona-39/)
+* Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
+* Сайт: [Проект сайта "Седона"](https://bnvnik.github.io/2165163-sedona-39/).
 
 ---
 
