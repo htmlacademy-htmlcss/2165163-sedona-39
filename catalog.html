@@ -44,7 +44,7 @@
                     Гостиницы
                 </p>
             </div>
-            <form action="#">
+            <form action="https://echo.htmlacademy.ru/">
                 <ul>
                     <li>
                         <h2>Инфраструктура:</h2>
@@ -70,8 +70,8 @@
                     </li>
                     <li>
                         <h2>Стоимость, ₽:</h2>
-                        <input type="number">
-                        <input type="number">
+                        <input type="number" name="price-min" min="0" max="9000">
+                        <input type="number" name="price-max" min="0" max="9000">
                         <input type="range">
                     </li>
                     <li>
@@ -171,8 +171,8 @@
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           </label>
-          <form action="#" method="post">
-            <input type="email" name="" id="field-email" placeholder="Ваш e-mail" autocomplete><input type="submit" value="Подписаться">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <input type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail" autocomplete><input type="submit" value="Подписаться">
           </form>
         </section>
         <section class="contacts">
