@@ -24,13 +24,17 @@
         </ul>
         <ul class="user-menu">
           <li>
-            <a href="#" class="search"><img src="images/placeholder-picture.jpg" alt=""></a>
+            <a href="#" class="search">
+              <img src="images/placeholder-picture.jpg" alt="">
+            </a>
           </li>
           <li>
-            <a href="#" class="likes"><img src="images/placeholder-picture.jpg" alt=""></a>
+            <a href="#" class="likes">
+              <img src="images/placeholder-picture.jpg" alt="">
+            </a>
           </li>
           <li>
-            <button>Хочу сюда!</button>
+            <button type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -101,20 +105,21 @@
       <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button>Поиск гостиницы в Cедоне</button>
+        <button type="button">Поиск гостиницы в Cедоне</button> <!-- открывает попап? -->
       </section>
     </main>
     <footer class="main-footer">
-      <section class="newsletter">
+      <div class="newsletter">
         <label for="field-email">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         </label>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail" autocomplete><input type="submit" value="Подписаться">
+          <input type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail" autocomplete>
+          <input type="submit" value="Подписаться">
         </form>
-      </section>
-      <section class="contacts">
+      </div>
+      <div class="contacts">
         <ul class="socials">
           <li>
             <a href="https://vk.com/htmlacademy">
@@ -132,11 +137,11 @@
             </a>
           </li>
         </ul>
-        <a href="#">+7 (812) 812-12-12</a>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/">
           <img src="images/placeholder-picture.jpg" alt="html academy">
         </a>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
