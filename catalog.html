@@ -7,44 +7,44 @@
   </head>
   <body>
     <header class="page-header">
-        <nav class="main-nav">
-          <a href="#" class="main-logo">
-            <img src="images/placeholder-picture.jpg" alt="">
-          </a>
-          <ul class="site-navigation">
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a href="#">О седоне</a>
-            </li>
-            <li>
-              <a href="catalog.html" class="active">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="user-menu">
-            <li>
-              <a href="#" class="search">
-                <img src="images/placeholder-picture.jpg" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#" class="likes">
-                <img src="images/placeholder-picture.jpg" alt="">
-              </a>
-            </li>
-            <li>
-              <button type="button">Хочу сюда!</button>
-            </li>
-          </ul>
-        </nav>
+      <nav class="main-nav">
+        <a href="#" class="main-logo">
+          <img src="images/placeholder-picture.jpg" alt="">
+        </a>
+        <ul class="site-navigation">
+          <li>
+            <a href="index.html" class="active">Главная</a>
+          </li>
+          <li>
+            <a href="#">О седоне</a>
+          </li>
+          <li>
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li>
+            <button class="search">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li>
+            <button class="favorites">
+              <span class="visually-hidden">Избранное</span>
+            </button>
+          </li>
+          <li>
+            <button>Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="catalog-page">
         <section class="search">
             <div class="title-wrapper">
                 <h1>Гостиницы Седоны</h1>
                 <p>
-                  <img src="images/placeholder-picture.jpg" alt="">Гостиницы
+                  Гостиницы
                 </p>
             </div>
             <form action="https://echo.htmlacademy.ru/">
@@ -91,9 +91,15 @@
                     <select name="sorting">
                         <option value="cheap">Сначала дешевые</option>
                     </select>
-                    <button type="button">Кнопка, как отображать</button>
-                    <button type="button">Кнопка, как отображать</button>
-                    <button type="button">Кнопка, как отображать</button>
+                    <button class="button-view-table">
+                      <span class="visually-hidden">Отобразить таблицей</span>
+                    </button>
+                    <button class="button-view-extended">
+                      <span class="visually-hidden">Отобразить развёрнуто</span>
+                    </button>
+                    <button class="button-view-list">
+                      <span class="visually-hidden">Отобразить списком</span>
+                    </button>
                 </p>
             </div>
             <ul class="catalog-items">
@@ -103,9 +109,17 @@
                     <ul>
                         <li>Гостиница</li>
                         <li>От 4000 ₽</li>
-                        <li>подробнее</li>
-                        <li>в избранное</li>
-                        <li>звезды</li>
+                        <li>
+                          <button>подробнее</button>
+                        </li>
+                        <li>
+                          <button>в избранное</button>
+                        </li>
+                        <li>
+                          <button>
+                            <span class="visually-hidden">4 звезды</span>
+                          </button>
+                        </li>
                         <li>Рейтинг: 8,5</li>
                     </ul>
                 </li>
@@ -115,9 +129,17 @@
                     <ul>
                         <li>Гостиница</li>
                         <li>От 5000 ₽</li>
-                        <li>подробнее</li>
-                        <li>в избранное</li>
-                        <li>звезды</li>
+                        <li>
+                          <button>подробнее</button>
+                        </li>
+                        <li>
+                          <button>в избранное</button>
+                        </li>
+                        <li>
+                          <button>
+                            <span class="visually-hidden">4 звезды</span>
+                          </button>
+                        </li>
                         <li>Рейтинг: 9,2</li>
                     </ul>
                 </li>
@@ -127,9 +149,17 @@
                     <ul>
                         <li>Гостиница</li>
                         <li>От 2500 ₽</li>
-                        <li>подробнее</li>
-                        <li>в избранное</li>
-                        <li>звезды</li>
+                        <li>
+                          <button>подробнее</button>
+                        </li>
+                        <li>
+                          <button>в избранное</button>
+                        </li>
+                        <li>
+                          <button>
+                            <span class="visually-hidden">3 звезды</span>
+                          </button>
+                        </li>
                         <li>Рейтинг: 6,9</li>
                     </ul>
                 </li>
@@ -139,9 +169,17 @@
                     <ul>
                         <li>Гостиница</li>
                         <li>От 1500 ₽</li>
-                        <li>подробнее</li>
-                        <li>в избранное</li>
-                        <li>звезды</li>
+                        <li>
+                          <button>подробнее</button>
+                        </li>
+                        <li>
+                          <button>в избранное</button>
+                        </li>
+                        <li>
+                          <button>
+                            <span class="visually-hidden">2 звезды</span>
+                          </button>
+                        </li>
                         <li>Рейтинг: 5,0</li>
                     </ul>
                 </li>
@@ -179,21 +217,21 @@
       </div>
         <div class="contacts">
             <ul class="socials">
-                <li>
-                  <a href="https://vk.com/htmlacademy">
-                    <img src="images/placeholder-picture.jpg" alt="vk">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://t.me/htmlacademy">
-                    <img src="images/placeholder-picture.jpg" alt="telegram">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/user/htmlacademyru">
-                    <img src="images/placeholder-picture.jpg" alt="youtube">
-                  </a>
-                </li>
+              <li>
+                <button class="button-vk">
+                  <span class="visually-hidden">Перейти в VK</span>
+                </button>
+              </li>
+              <li>
+                <button class="button-vk">
+                  <span class="visually-hidden">Перейти в Telegram</span>
+                </button>
+              </li>
+              <li>
+                <button class="button-vk">
+                  <span class="visually-hidden">Перейти в Youtube</span>
+                </button>
+              </li>
             </ul>
             <a href="#">+7 (812) 812-12-12</a>
             <a href="https://htmlacademy.ru/">
