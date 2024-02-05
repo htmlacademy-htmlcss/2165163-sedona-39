@@ -36,7 +36,51 @@
         </nav>
     </header>
     <main>
+        <section class="filters">
+            <div class="title-wrapper">
+                <h1>Гостиницы Седоны</h1>
+                <p>
+                    <img src="images/placeholder-picture.jpg" alt="">
+                    Гостиницы
+                </p>
+            </div>
+            <form action="#">
+                <ul>
+                    <li>
+                        <h2>Инфраструктура:</h2>
+                        <input type="checkbox" name="checkbox-pool" id="input-pool" checked>
+                        <label for="input-pool">Бассейн</label>
 
+                        <input type="checkbox" name="checkbox-parking" id="input-parking" checked>
+                        <label for="input-parking">Парковка</label>
+
+                        <input type="checkbox" name="checkbox-wifi" id="input-wifi">
+                        <label for="input-wifi">Wi-Fi</label>
+                    </li>
+                    <li>
+                        <h2>Тип жилья:</h2>
+                        <input type="radio" name="input-housing" id="input-hotel" value="hotel">
+                        <label for="input-hotel">Гостиница</label>
+
+                        <input type="radio" name="input-housing" id="input-motel" value="motel">
+                        <label for="input-motel">Мотель</label>
+
+                        <input type="radio" name="input-housing" id="input-apartments" value="apartments">
+                        <label for="input-apartments">Апартаменты</label>
+                    </li>
+                    <li>
+                        <h2>Стоимость, ₽:</h2>
+                        <input type="number">
+                        <input type="number">
+                        <input type="range">
+                    </li>
+                    <li>
+                        <input type="submit" value="Применить">
+                        <input type="reset">
+                    </li>
+                </ul>
+            </form>
+        </section>
     </main>
     <footer class="main-footer">
         <section class="newsletter">
