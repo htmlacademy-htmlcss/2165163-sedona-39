@@ -57,31 +57,43 @@
         <form action="https://echo.htmlacademy.ru/">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <input type="checkbox" name="checkbox-pool" id="input-pool" checked>
-            <label for="input-pool">Бассейн</label>
+            <label>
+              <input type="checkbox" name="checkbox-pool" checked>
+              Бассейн
+            </label>
 
-            <input type="checkbox" name="checkbox-parking" id="input-parking" checked>
-            <label for="input-parking">Парковка</label>
+            <label>
+              <input type="checkbox" name="checkbox-parking" checked>
+              Парковка
+            </label>
 
-            <input type="checkbox" name="checkbox-wifi" id="input-wifi">
-            <label for="input-wifi">Wi-Fi</label>
+            <label>
+              <input type="checkbox" name="checkbox-wifi">
+              Wi-Fi
+            </label>
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <input type="radio" name="input-housing" id="input-hotel" value="hotel" checked>
-            <label for="input-hotel">Гостиница</label>
+            <label>
+              <input type="radio" name="input-housing" value="hotel" checked>
+              Гостиница
+            </label>
 
-            <input type="radio" name="input-housing" id="input-motel" value="motel">
-            <label for="input-motel">Мотель</label>
+            <label>
+              <input type="radio" name="input-housing" value="motel">
+              Мотель
+            </label>
 
-            <input type="radio" name="input-housing" id="input-apartments" value="apartments">
-            <label for="input-apartments">Апартаменты</label>
+            <label>
+              <input type="radio" name="input-housing" value="apartments">
+              Апартаменты
+            </label>
           </fieldset>
           <fieldset>
             <legend>Стоимость, ₽:</legend>
-            <input type="number" name="price-min" min="0" max="9000">
-            <input type="number" name="price-max" min="0" max="9000">
-            <input type="range">
+            <input type="text" name="price-min">
+            <input type="text" name="price-max">
+            <input type="range" name="price-range" min="0" max="9000">
           </fieldset>
           <fieldset>
             <input type="submit" value="Применить">
@@ -93,7 +105,7 @@
         <div class="catalog-filters">
           <h2>Найдено гостиниц: <span class="catalog-filters-result">38</span></h2>
           <p>
-            <select name="sorting">
+            <select name="sorting" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="expensive">Сначала с высоким рейтингом</option>
@@ -188,7 +200,9 @@
           <li>
             <a href="#">4</a>
           </li>
-          <li>...</li>
+          <li>
+            <a>...</a>
+          </li>
           <li>
             <a href="#">10</a>
           </li>
