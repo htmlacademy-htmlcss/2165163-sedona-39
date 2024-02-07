@@ -41,14 +41,17 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-page">
+    <main class="main-content">
       <section class="search">
-        <div class="title-wrapper">
-          <h1>Гостиницы Седоны</h1>
-          <p>
-            Гостиницы
-          </p>
-        </div>
+        <h1 class="search-title">Гостиницы Седоны</h1>
+        <p class="search-link-path">
+          <a href="index.html">
+            <span class="visually-hidden">Главная страница</span>
+          </a>
+          <a href="#" title="Страница поиска гостиниц в Седоне">
+            <span>Гостиницы</span>
+          </a>
+        </p>
         <form action="https://echo.htmlacademy.ru/">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -86,19 +89,20 @@
       </section>
       <section class="catalog">
         <div class="catalog-filters">
-          <h2>Найдено гостиниц: <span>38</span></h2>
+          <h2>Найдено гостиниц: <span class="catalog-filters-result">38</span></h2>
           <p>
             <select name="sorting">
               <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
             <button type="button" class="button-view-table">
-              <span class="visually-hidden">Отобразить таблицей</span>
+              <span class="visually-hidden">Смотреть в виде сетки</span>
             </button>
             <button type="button" class="button-view-extended">
-              <span class="visually-hidden">Отобразить развёрнуто</span>
+              <span class="visually-hidden">Смотреть с подробностями</span>
             </button>
             <button type="button" class="button-view-list">
-              <span class="visually-hidden">Отобразить списком</span>
+              <span class="visually-hidden">Смотреть списком</span>
             </button>
           </p>
         </div>
