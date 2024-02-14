@@ -29,3 +29,55 @@ body {
 }
 
 /* Основные стили. End */
+
+/* Шапка. Start */
+
+.navigation-items {
+  list-style: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-link_active {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 19px;
+  text-underline-position: under;
+}
+
+.user-menu {
+  list-style: none;
+}
+
+.user-menu .button-search {
+  background: url("../images/icons/icon-search.svg") no-repeat;
+}
+
+.user-menu .button-favorites {
+  background: url("../images/icons/icon-favorites.svg") no-repeat;
+}
+
+.user-menu .button-favorites-number {
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7DB54F;
+  color: #FFFFFF;
+}
+
+.user-menu .button-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+
+/* Шапка. Start */
