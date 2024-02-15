@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body class="page">
+  <body>
     <header class="main-header">
       <nav class="header-navigation">
         <a class="header-logo" href="#">
@@ -17,7 +17,7 @@
         <!-- Блок ссылок навигации по сайту. Start -->
         <ul class="navigation-items">
           <li>
-            <a class="navigation-link navigation-link_active" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link_current" href="index.html">Главная</a>
           </li>
           <li>
             <a class="navigation-link" href="#">О Седоне</a>
@@ -49,10 +49,11 @@
     </header>
     <main class="main-content">
       <section class="hero">
-        <img src="images/hero-text.svg" width="458" height="352" alt="Welcome, to the gorgeous. Sedona, because the grand canyon sucks!">
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="visually-hidden">Седона — город в Аризоне</h1>
+        <img class="hero-img" src="images/hero-text.svg" width="458" height="352" alt="Welcome, to the gorgeous. Sedona, because the grand canyon sucks!">
       </section>
       <section class="advantages">
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <h2 class="advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
