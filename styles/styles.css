@@ -73,6 +73,24 @@ body {
   color:#FFFFFF;
 }
 
+.button__small-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button__average-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .bg-color__blue {
   background-color: #82B3D3;
 }
@@ -83,6 +101,10 @@ body {
 
 .bg-color__light-grey {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.bg-color__brown {
+  background-color: #756157;
 }
 
 /* Основные стили. End */
@@ -128,15 +150,6 @@ body {
   color: #FFFFFF;
 }
 
-.user-menu .button-link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background-color: #756157;
-}
-
 /* Шапка styles. End */
 
 /* Hero styles. Start */
@@ -172,3 +185,9 @@ body {
 }
 
 /* Description styles. End */
+
+/* Search styles. Start */
+
+
+
+/* Search styles. End */
