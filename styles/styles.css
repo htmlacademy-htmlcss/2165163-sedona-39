@@ -1,4 +1,4 @@
-/* Шрифты. Start */
+/* Font styles. Start */
 
 @font-face {
   font-family: "PT Sans";
@@ -16,9 +16,9 @@
   font-display: swap;
 }
 
-/* Шрифты. End */
+/* Font styles. End */
 
-/* Основные стили. Start */
+/* Basic styles. Start */
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -61,23 +61,19 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  color: #333333;
 }
 
 .description-text__small {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
   text-align: center;
-  color: #333333;
-}
-
-.text-color__white {
-  color:#FFFFFF;
 }
 
 .button__small-text {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -86,9 +82,16 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.text-color__white {
+  color:#FFFFFF;
+}
+
+.text-color__dark-brown {
+  color: #333333;
 }
 
 .bg-color__blue {
@@ -107,9 +110,9 @@ body {
   background-color: #756157;
 }
 
-/* Основные стили. End */
+/* Basic styles. End */
 
-/* Шапка styles. Start */
+/* Header styles. Start */
 
 .navigation-items {
   list-style: none;
@@ -120,7 +123,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
-  color: inherit;
+  color: #000000;
 }
 
 .navigation-link_current {
@@ -150,7 +153,7 @@ body {
   color: #FFFFFF;
 }
 
-/* Шапка styles. End */
+/* Header styles. End */
 
 /* Hero styles. Start */
 
@@ -186,8 +189,19 @@ body {
 
 /* Description styles. End */
 
-/* Search styles. Start */
+/* Newsletter styles. Start */
 
+.newsletter {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  background-image: url("../images/newsletter-background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #82B3D3;
+}
 
+.newsletter-button {
+  font-family: "PT Sans", sans-serif;
+}
 
-/* Search styles. End */
+/* Newsletter styles. End */
