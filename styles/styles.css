@@ -28,6 +28,8 @@ body {
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
+  padding: 0 40px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden { /* Временные свойства, изменить когда будет прохождение на курсе */
