@@ -126,7 +126,7 @@ body {
   color: #000000;
 }
 
-.navigation-link_current {
+.navigation-link__current {
   text-decoration: underline;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
@@ -200,8 +200,27 @@ body {
   background-color: #82B3D3;
 }
 
+.newsletter form {
+  text-align: center;
+}
+
 .newsletter-button {
   font-family: "PT Sans", sans-serif;
 }
 
 /* Newsletter styles. End */
+
+/* Footer styles. Start */
+
+.main-footer ul {
+  list-style: none;
+}
+
+.link-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Footer styles. End */
