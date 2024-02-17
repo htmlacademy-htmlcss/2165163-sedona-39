@@ -10,130 +10,131 @@
 
   <body>
     <header class="main-header">
-      <nav class="header-navigation">
-        <a class="header-logo" href="#">
-          <img src="images/logo-sedona.svg" width="140" height="70" alt="Логотип с надписью City of Sedona">
+      <nav class="header-nav">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип с надписью City of Sedona">
         </a>
         <!-- Блок ссылок навигации по сайту. Start -->
-        <ul class="navigation-items">
+        <ul class="navigation-site">
           <li>
-            <a class="navigation-link navigation-link__current" href="index.html">Главная</a>
+            <a class="link link--current" href="index.html">Главная</a>
           </li>
           <li>
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="link" href="#">О Седоне</a>
           </li>
           <li>
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <!-- Блок ссылок навигации по сайту. End -->
         <!-- Блок ссылок меню пользователя. Start -->
-        <ul class="user-menu">
+        <ul class="menu-user">
           <li>
-            <a class="button-search" href="#">
+            <a class="link link--button-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li>
-            <a class="button-favorites" href="#">
+            <a class="link link--button-favorites" href="#">
               <span class="visually-hidden">В избранном</span>
-              <span class="button-favorites-number">12</span>
+              <span class="span-number">12</span>
             </a>
           </li>
           <li>
-            <a class="button__small-text text-color__white bg-color__brown" href="#">Хочу сюда!</a>
+            <a class="link link--button-want" href="#">Хочу сюда!</a>
           </li>
         </ul>
         <!-- Блок ссылок меню пользователя. End -->
       </nav>
     </header>
-    <main class="main-content">
+    <main class="main">
       <section class="hero">
         <h1 class="visually-hidden">Седона — город в Аризоне</h1>
-        <img class="hero-img" src="images/hero-text.svg" width="458" height="352" alt="Welcome, to the gorgeous. Sedona, because the grand canyon sucks!">
+        <img class="hero__img" src="images/hero-text.svg" width="458" height="352" alt="Welcome, to the gorgeous. Sedona, because the grand canyon sucks!">
       </section>
       <section class="advantages">
-        <p class="title__average">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <h2 class="description-text__medium text-color__dark-brown">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <div class="advantages-item-wrapper bg-color__blue">
-              <h3 class="title__small text-color__white">Настоящий городок</h3>
-              <p class="description-text__small text-color__white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <p class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <h2 class="advantages__desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+        <ul class="advantages__list">
+          <li>
+            <div class="advantages__wrapper bg-color-blue">
+              <h3 class="advantages__subtitle t-color-white">Настоящий городок</h3>
+              <p class="advantages__subdesc t-color-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="images/advantages-image-1.jpg" width="800" height="385" alt="Улица с домами в Седоне, в далеке виднеются горы">
           </li>
-          <li class="advantages-item bg-color__light-grey">
-            <h3 class="title__small">Небольшая площадь</h3>
-            <p class="description-text__small text-color__dark-brown">Все достопримечательности находятся очень близко</p>
+          <li class="bg-color-lightgray">
+            <h3 class="advantages__subtitle">Небольшая площадь</h3>
+            <p class="advantages__subdesc">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item bg-color__grey">
-            <h3 class="title__small">Красивая дорога</h3>
-            <p class="description-text__small text-color__dark-brown">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="bg-color-gray">
+            <h3 class="advantages__subtitle">Красивая дорога</h3>
+            <p class="advantages__subdesc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item bg-color__light-grey">
-            <h3 class="title__small">Мало туристов</h3>
-            <p class="description-text__small text-color__dark-brown">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="bg-color-lightgray">
+            <h3 class="advantages__subtitle">Мало туристов</h3>
+            <p class="advantages__subdesc">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li>
             <img src="images/advantages-image-2.jpg" width="800" height="385" alt="Мост дьявола, большая естественная арка в скалах из красного песчаника, образовавшаяся из-за ветра и дождей">
-            <div class="advantages-item-wrapper bg-color__blue">
-              <h3 class="title__small text-color__white">Там есть мост дьявола</h3>
-              <p class="description-text__small text-color__white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="advantages__wrapper bg-color-blue">
+              <h3 class="advantages__subtitle t-color-white">Там есть мост дьявола</h3>
+              <p class="advantages__subdesc t-color-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="description">
-        <h2 class="title__average">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="description-text__medium text-color__dark-brown">Опытный персонал и качественное обслуживание!</p>
-        <ul class="description-list">
-          <li class="description-item bg-color__light-grey">
-            <h3 class="title__small">Жильё</h3>
-            <p class="description-text__small text-color__dark-brown">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+      <section class="infrastructure">
+        <h2 class="visually-hidden">Инфраструктура города Седона</h2>
+        <p class="infrastructure__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="infrastructure__desc">Опытный персонал и качественное обслуживание!</p>
+        <ul class="infrastructure__list">
+          <li class="bg-color-lightgray">
+            <h3 class="infrastructure__subtitle">Жильё</h3>
+            <p class="infrastructure__subdesc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="description-item">
-            <h3 class="title__small">Еда</h3>
-            <p class="description-text__small text-color__dark-brown">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <li>
+            <h3 class="infrastructure__subtitle">Еда</h3>
+            <p class="infrastructure__subdesc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="description-item bg-color__light-grey">
-            <h3 class="title__small">Сувениры</h3>
-            <p class="description-text__small text-color__dark-brown">Не только китайского, но и настоящего местного производства!</p>
+          <li class="bg-color-lightgray">
+            <h3 class="infrastructure__subtitle">Сувениры</h3>
+            <p class="infrastructure__subdesc">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Cедоне</h2>
-        <p class="title__average">Заинтересовались?</p>
-        <p class="description-text__medium text-color__dark-brown">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button__average-text text-color__white bg-color__brown" href="#">Поиск гостиницы в Cедоне</a>
+        <p class="search__title">Заинтересовались?</p>
+        <p class="search__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search__link-button" href="#">Поиск гостиницы в Cедоне</a>
       </section>
       <section class="newsletter">
-        <h2 class="title__average text-color__white">Подпишитесь на рассылку</h2>
-        <p class="description-text__medium text-color__white">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+        <p class="newsletter__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="field-email">Напишите ваш e-mail</label>
-          <input type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail">
-          <button class="newsletter-button button__average-text bg-color__blue text-color__white" type="button">Подписаться</button>
+          <input class="form-newsletter__input" type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail">
+          <button class="form-newsletter__button" type="button">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="contacts-list">
+      <ul class="footer-list">
         <!-- Блок ссылок на соцсети. Start -->
         <li>
           <ul class="socials-list">
-            <li class="socials-item">
+            <li>
               <a class="link-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Перейти в VK</span>
               </a>
             </li>
-            <li class="socials-item">
+            <li>
               <a class="link-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Перейти в Telegram</span>
               </a>
             </li>
-            <li class="socials-item">
+            <li>
               <a class="link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Перейти в Youtube</span>
               </a>
