@@ -437,6 +437,10 @@ background-color: #82B3D3;
   background-color: #82B3D3;
 }
 
+.link-button--favorites-added {
+  background-color: #7DB54F;
+}
+
 .link-button--rating {
   font-weight: 400;
   color: #333333;
