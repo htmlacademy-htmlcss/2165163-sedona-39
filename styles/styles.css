@@ -102,11 +102,11 @@ body {
   text-underline-position: under;
 }
 
-.link--button-search {
+.link--ico-search {
   background: url("../images/icons/icon-search.svg") no-repeat;
 }
 
-.link--button-favorites {
+.link--ico-favorites {
   background: url("../images/icons/icon-favorites.svg") no-repeat;
 }
 
