@@ -61,7 +61,7 @@
             </li>
           </ol>
           <span class="visually-hidden">Укажите критерии поиска жилья</span>
-          <form class="form-search-catalog" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="form-search-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Инфраструктура:</legend>
 
@@ -102,10 +102,10 @@
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
 
               <label class="visually-hidden" for="price-min-id">Укажите нижний порог цены</label>
-              <input class="filter__input-price-min" type="text" name="price-min" id="price-min-id" placeholder="от">
+              <input class="filter__input-price-min" type="number" name="price-min" id="price-min-id" placeholder="от">
 
               <label class="visually-hidden" for="price-max-id">Укажите верхний порог цены</label>
-              <input class="filter__input-price-max" type="text" name="price-max" id="price-max-id" placeholder="до">
+              <input class="filter__input-price-max" type="number" name="price-max" id="price-max-id" placeholder="до">
 
               <input type="range" name="price-range" min="0">
             </fieldset>
@@ -248,7 +248,7 @@
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="field-email">Напишите ваш e-mail</label>
             <input class="form-newsletter__input" type="email" name="newsletter-input" id="field-email" placeholder="Ваш e-mail">
-            <button class="form-newsletter__button" type="button">Подписаться</button>
+            <button class="form-newsletter__button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
