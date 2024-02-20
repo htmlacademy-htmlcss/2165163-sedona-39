@@ -141,7 +141,7 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
 
-  background-image: url("../images/hero-background-image.jpg");
+  background-image: url("../images/background-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -216,7 +216,7 @@ body {
   padding-top: 96px;
   padding-bottom: 104px;
 
-  background-image: url("../images/newsletter-background-image.jpg");
+  background-image: url("../images/background-image-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -286,7 +286,7 @@ body {
 
 .search-catalog {
   background-color: #82B3D3;
-  background-image: url("../images/catalog-search-background-image.jpg");
+  background-image: url("../images/background-image-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
