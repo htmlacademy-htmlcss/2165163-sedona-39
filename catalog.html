@@ -64,42 +64,49 @@
           <form class="form-search-catalog" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Инфраструктура:</legend>
-              <label class="block-filter__desc-input">
-                <input type="checkbox" name="checkbox-pool" checked>
+
+              <label class="block-filter__desc-input" for="checkbox-pool-id">
+                <input type="checkbox" name="checkbox-pool" id="checkbox-pool-id" checked>
                 Бассейн
               </label>
 
-              <label class="block-filter__desc-input">
-                <input type="checkbox" name="checkbox-parking" checked>
+              <label class="block-filter__desc-input" for="checkbox-parking-id">
+                <input type="checkbox" name="checkbox-parking" id="checkbox-parking-id" checked>
                 Парковка
               </label>
 
-              <label class="block-filter__desc-input">
-                <input type="checkbox" name="checkbox-wifi">
+              <label class="block-filter__desc-input" for="checkbox-wifi-id">
+                <input type="checkbox" name="checkbox-wifi" id="checkbox-wifi-id">
                 Wi-Fi
               </label>
             </fieldset>
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Тип жилья:</legend>
-              <label class="block-filter__desc-input">
-                <input type="radio" name="input-housing" value="hotel" checked>
+
+              <label class="block-filter__desc-input" for="input-housing-hotel-id">
+                <input type="radio" name="input-housing" value="hotel" id="input-housing-hotel-id" checked>
                 Гостиница
               </label>
 
-              <label class="block-filter__desc-input">
-                <input type="radio" name="input-housing" value="motel">
+              <label class="block-filter__desc-input" for="input-housing-motel-id">
+                <input type="radio" name="input-housing" value="motel" id="input-housing-motel-id">
                 Мотель
               </label>
 
-              <label class="block-filter__desc-input">
-                <input type="radio" name="input-housing" value="apartments">
+              <label class="block-filter__desc-input" for="input-housing-apartments-id">
+                <input type="radio" name="input-housing" value="apartments" id="input-housing-apartments-id">
                 Апартаменты
               </label>
             </fieldset>
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
-              <input class="filter__input-price-min" type="text" name="price-min" placeholder="от" aria-label="Укажите нижний порог цены">
-              <input class="filter__input-price-max" type="text" name="price-max" placeholder="до" aria-label="Укажите верхний порог цены">
+
+              <label class="visually-hidden" for="price-min-id">Укажите нижний порог цены</label>
+              <input class="filter__input-price-min" type="text" name="price-min" id="price-min-id" placeholder="от">
+
+              <label class="visually-hidden" for="price-max-id">Укажите верхний порог цены</label>
+              <input class="filter__input-price-max" type="text" name="price-max" id="price-max-id" placeholder="до">
+
               <input type="range" name="price-range" min="0">
             </fieldset>
             <fieldset class="block-button">
