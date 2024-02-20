@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона. Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -24,7 +24,7 @@
               <a class="link" href="#">О Седоне</a>
             </li>
             <li>
-              <a class="link link--current" href="catalog.html">Гостиницы</a>
+              <a class="link link--current" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <!-- Блок ссылок навигации по сайту. End -->
@@ -57,9 +57,10 @@
               </a>
             </li>
             <li>
-              <a class="path__link">Гостиницы</a>
+              <a class="path__link" aria-current="page">Гостиницы</a>
             </li>
           </ol>
+          <span class="visually-hidden">Укажите критерии поиска жилья</span>
           <form class="form-search-catalog" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Инфраструктура:</legend>
@@ -97,8 +98,8 @@
             </fieldset>
             <fieldset class="block-filter">
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
-              <input class="filter__input-price-min" type="text" name="price-min" placeholder="от">
-              <input class="filter__input-price-max" type="text" name="price-max" placeholder="до">
+              <input class="filter__input-price-min" type="text" name="price-min" placeholder="от" aria-label="Укажите нижний порог цены">
+              <input class="filter__input-price-max" type="text" name="price-max" placeholder="до" aria-label="Укажите верхний порог цены">
               <input type="range" name="price-range" min="0">
             </fieldset>
             <fieldset class="block-button">
@@ -114,7 +115,7 @@
           <div class="catalog-filters">
             <h2 class="catalog__title title">Найдено гостиниц: <span class="catalog-filters__result-number">38</span></h2>
             <p>
-              <select class="button-sorting" name="sorting" aria-label="Сортировка">
+              <select class="button-sorting" name="sorting" aria-label="Сортировка карточек жилья">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="expensive">Сначала с высоким рейтингом</option>
@@ -208,26 +209,29 @@
           </ul>
           <!-- Блок со списком карточек жилья. End -->
           <!-- Блок с нумерацией страниц. Start -->
-          <ul class="catalog-pagination">
-            <li>
-              <a class="pagination__link pagination__link--current" href="#">1</a>
-            </li>
-            <li>
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li>
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li>
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li>
-              <a class="pagination__link pagination__link--middle">...</a>
-            </li>
-            <li>
-              <a class="pagination__link" href="#">10</a>
-            </li>
-          </ul>
+          <div class="catalog-pagination-wrapper">
+            <span class="visually-hidden">Страницы каталога</span>
+            <ul class="catalog-pagination">
+              <li>
+                <a class="pagination__link pagination__link--current" href="#">1</a>
+              </li>
+              <li>
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li>
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li>
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li>
+                <a class="pagination__link pagination__link--middle">...</a>
+              </li>
+              <li>
+                <a class="pagination__link" href="#">10</a>
+              </li>
+            </ul>
+          </div>
           <!-- Блок с нумерацией страниц. End -->
         </section>
         <!-- Каталог с карточками жилья. End -->
