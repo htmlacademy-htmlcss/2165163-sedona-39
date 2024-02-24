@@ -30,12 +30,12 @@
           <!-- Блок ссылок навигации по сайту. End -->
           <!-- Блок ссылок меню пользователя. Start -->
           <ul class="menu-user">
-            <li>
+            <li class="menu-user__item">
               <a class="link link--ico-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li>
+            <li class="menu-user__item">
               <a class="link link--ico-favorites" href="#">
                 <span class="visually-hidden">В избранном</span>
                 <span class="span-number">12</span>
@@ -62,7 +62,7 @@
           </ol>
           <span class="visually-hidden">Укажите критерии поиска жилья</span>
           <form class="form-search-catalog" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="block-filter">
+            <fieldset class="block-filter block-filter-infrastructure">
               <legend class="block-filter__subtitle">Инфраструктура:</legend>
 
               <label class="block-filter__desc-input" for="checkbox-pool-id">
@@ -80,7 +80,7 @@
                 Wi-Fi
               </label>
             </fieldset>
-            <fieldset class="block-filter">
+            <fieldset class="block-filter block-filter-housing">
               <legend class="block-filter__subtitle">Тип жилья:</legend>
 
               <label class="block-filter__desc-input" for="input-housing-hotel-id">
@@ -98,7 +98,7 @@
                 Апартаменты
               </label>
             </fieldset>
-            <fieldset class="block-filter">
+            <fieldset class="block-filter block-filter-price">
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
 
               <label class="visually-hidden" for="price-min-id">Укажите нижний порог цены</label>
@@ -109,7 +109,7 @@
 
               <input type="range" name="price-range" min="0">
             </fieldset>
-            <fieldset class="block-button">
+            <fieldset class="block-filter block-button">
               <button class="filter__button-submit" type="submit">Применить</button>
               <button class="filter__button-reset" type="reset">Сбросить</button>
             </fieldset>
@@ -121,22 +121,28 @@
           <!-- Блок с вариантами сортировки карточек жилья. Start -->
           <div class="catalog-filters">
             <h2 class="catalog__title title">Найдено гостиниц: <span class="catalog-filters__result-number">38</span></h2>
-            <p>
-              <select class="button-sorting" name="sorting" aria-label="Сортировка карточек жилья">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="expensive">Сначала с высоким рейтингом</option>
-              </select>
-              <a class="button-view-table" href="#">
-                <span class="visually-hidden">Смотреть в виде сетки</span>
-              </a>
-              <a class="button-view-extended" href="#">
-                <span class="visually-hidden">Смотреть с подробностями</span>
-              </a>
-              <a class="button-view-list" href="#">
-                <span class="visually-hidden">Смотреть списком</span>
-              </a>
-            </p>
+            <select class="button-sorting" name="sorting" aria-label="Сортировка карточек жилья">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="expensive">Сначала с высоким рейтингом</option>
+            </select>
+            <ul class="view-items">
+              <li>
+                <a class="button-view-table" href="#">
+                  <span class="visually-hidden">Смотреть в виде сетки</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-view-extended" href="#">
+                  <span class="visually-hidden">Смотреть с подробностями</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-view-list" href="#">
+                  <span class="visually-hidden">Смотреть списком</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <!-- Блок с вариантами сортировки карточек жилья. End -->
           <!-- Блок со списком карточек жилья. Start -->
