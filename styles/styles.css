@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 
   background-color: #FFFFFF;
