@@ -772,7 +772,7 @@ body {
 }
 
 .catalog__title {
-  margin-right: 200px;
+  margin-right: auto;
 
   text-align: left;
 }
