@@ -644,9 +644,12 @@ body {
 }
 
 .search-catalog__path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
+  margin-bottom: 40px;
 
   list-style: none;
   font-size: 16px;
@@ -659,6 +662,8 @@ body {
 
 .form-search-catalog {
   display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
 }
 
 .block-filter {
@@ -671,18 +676,18 @@ body {
 }
 
 .block-filter-infrastructure {
-  margin-right: 70px;
+  min-width: 150px;
 }
 
 .block-filter-housing {
-  margin-right: 140px;
-}
-
-.block-filter-price {
+  min-width: 150px;
   margin-right: 70px;
 }
 
 .block-filter__subtitle {
+  padding: 0;
+  margin-bottom: 32px;
+
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -690,8 +695,14 @@ body {
 }
 
 .block-filter__desc-input {
+  margin-bottom: 16px;
+
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.block-filter__desc-input:last-child {
+  margin-bottom: 0;
 }
 
 .filter__input-price-min,
@@ -717,17 +728,28 @@ body {
   display: none;
 }
 
+.block-button {
+  margin-top: 56px;
+}
+
 .filter__button-submit,
 .filter__button-reset {
+  padding: 8px 50px;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
+
+  border: none;
+  border-radius: 4px;
 }
 
 .filter__button-submit {
+  margin-bottom: 32px;
+
   background-color: #82B3D3;
 }
 
