@@ -121,9 +121,10 @@ body {
 }
 
 .logo {
+  flex-shrink: 0;
   align-self: flex-start;
   width: 140px;
-  margin-right: 30px;
+  margin-right: 28px;
   margin-bottom: -6px;
 }
 
@@ -136,25 +137,26 @@ body {
 .navigation-site {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
-  margin-right: auto;
+  margin-right: 28px;
   list-style: none;
 }
 
 .navigation-site .link {
   display: block;
-  padding: 20px 14px;
+  padding: 20px 16px;
 }
 
 .menu-user {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 
   margin: 0;
   padding: 0;
-  margin-right: 38px;
+  margin-right: 20px;
   list-style: none;
 }
 
@@ -185,7 +187,7 @@ body {
 
   width: 20px;
   height: 20px;
-  padding: 22px 6px;
+  padding: 22px 12px;
   background: url("../images/icons/icon-search.svg") no-repeat;
   background-position: center;
 }
@@ -200,7 +202,7 @@ body {
 
   width: 20px;
   height: 20px;
-  padding: 22px 6px;
+  padding: 22px 12px;
   background: url("../images/icons/icon-favorites.svg") no-repeat;
   background-position: center;
 }
@@ -208,7 +210,7 @@ body {
 .span-number {
   position: absolute;
   top: 11px;
-  right: -3px;
+  right: 3px;
 
   display: flex;
   align-items: center;
@@ -226,6 +228,7 @@ body {
 }
 
 .link--button-want {
+  flex-shrink: 0;
   padding: 8px 34px;
 
   font-size: 16px;
@@ -290,12 +293,15 @@ body {
 
 .advantages__item-list--wide {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
+  justify-content: center;
 
   min-height: 385px;
 }
 
-.advantages__item-list {
+.advantages__item-list,
+.advantages__wrapper {
   flex-grow: 1;
 
   width: 400px;
@@ -304,16 +310,14 @@ body {
   padding: 102px 85px;
 }
 
-.advantages__wrapper {
-  flex-grow: 1;
-
-  padding: 102px 85px;
-}
-
 .advantages__image {
   width: 800px;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.advantages__subtitle {
+  margin-bottom: 62px;
 }
 
 .advantages--tcolor {

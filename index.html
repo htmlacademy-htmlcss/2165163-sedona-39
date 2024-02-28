@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="header-nav">
           <a class="logo" href="index.html">
             <img class="logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип с надписью City of Sedona">
@@ -46,14 +46,14 @@
           <!-- Блок ссылок меню пользователя. End -->
         </nav>
       </header>
-      <main class="main-container main">
-        <section class="hero">
+      <main class="main-container main" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона — город в Аризоне</h1>
           <p class="visually-hidden" lang="en">Welcome, to the gorgeous Sedona, <q>because the grand canyon sucks!</q></p>
           <p class="visually-hidden" lang="ru">Переводится как: Добро пожаловать в великолепную Седону, <q>потому что Гранд-Каньон – отстой!</q></p>
           <img class="hero__img" src="images/hero-text.svg" width="458" height="352" alt="" aria-hidden="true">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <p class="advantages__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
           <h2 class="advantages__desc description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
           <ul class="advantages__list">
@@ -104,13 +104,13 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы в Cедоне</h2>
           <p class="search__title title">Заинтересовались?</p>
           <p class="search__desc description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search__link-button" href="#">Поиск гостиницы в Cедоне</a>
         </section>
-        <section class="newsletter">
+        <section class="newsletter" data-test="subscribe">
           <h2 class="newsletter__title title">Подпишитесь на рассылку</h2>
           <p class="newsletter__desc description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -120,7 +120,7 @@
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <ul class="footer-list">
           <!-- Блок ссылок на соцсети. Start -->
           <li>
