@@ -519,6 +519,8 @@ body {
 
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 
   min-height: 50px;
@@ -528,17 +530,11 @@ body {
   list-style: none;
 }
 
-.socials-list-wrapper {
-  display: flex;
-  flex-grow: 1;
-  max-width: 235px;
-  margin-right: 141px;
-}
-
 .socials-list {
   display: flex;
   flex-wrap: wrap;
 
+  max-width: 141px;
   margin: 0;
   padding: 0;
 
@@ -586,24 +582,13 @@ body {
   background-position: center;
 }
 
-.link-phone-wrapper {
-  margin-right: auto;
-}
-
 .link-phone {
-  display: inline-block;
+  display: block;
 
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-}
-
-.link-htmlacademy-wrapper {
-  display: flex;
-  flex-grow: 1;
-  max-width: 235px;
-  justify-content: flex-end;
 }
 
 .link-htmlacademy {
