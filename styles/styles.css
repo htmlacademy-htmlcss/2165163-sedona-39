@@ -245,12 +245,14 @@ body {
 /* Hero styles. Start */
 
 .hero {
+  box-sizing: border-box;
+  min-height: 485px;
   padding: 51px 70px 82px;
 
-  background-image: url("../images/background-image-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/apron.svg), url(../images/background-image-1.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: bottom, center;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
