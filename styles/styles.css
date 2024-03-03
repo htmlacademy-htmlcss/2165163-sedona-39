@@ -770,6 +770,7 @@ body {
   width: 292px;
   height: 49px;
   padding: 10px 16px;
+  margin-right: 70px;
 
   font-family: inherit;
   font-size: 18px;
@@ -783,10 +784,43 @@ body {
 }
 
 .view-items {
+  display: flex;
+  gap: 8px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.button-view::before {
+  content: "";
+  display: block;
+
+  width: 16px;
+  height: 14px;
+  padding: 15px 14px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-view-table::before {
+  background-image: url("../images/icons/icon-sorting-tile.svg");
+}
+
+.button-view-extended::before {
+  background-image: url("../images/icons/icon-sorting-extended.svg");
+}
+
+.button-view-list::before {
+  background-image: url("../images/icons/icon-sorting-list.svg");
+}
+
+.button-view--current::before {
+  border-color: #000000;
 }
 
 .catalog-items {
