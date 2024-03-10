@@ -605,8 +605,13 @@ body {
   background-color: #68A2CA;
 }
 
-.form-newsletter__button:active {
+.form-newsletter__button:active:not([disabled]) {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.form-newsletter__button:disabled {
+  background-color: #E5E5E5;
+  cursor: no-drop;
 }
 
 /* Newsletter styles. End */
