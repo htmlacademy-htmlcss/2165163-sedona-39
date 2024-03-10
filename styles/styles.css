@@ -632,6 +632,21 @@ body {
   mask-image: url("../images//icons/icon-youtube.svg");
 }
 
+.link-vk:hover::before,
+.link-vk:focus::before,
+.link-telegram:hover::before,
+.link-telegram:focus::before,
+.link-youtube:hover::before,
+.link-youtube:focus::before {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.link-vk:active::before,
+.link-telegram:active::before,
+.link-youtube:active::before {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
 .link-phone {
   display: block;
 
