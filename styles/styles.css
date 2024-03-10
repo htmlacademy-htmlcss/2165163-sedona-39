@@ -653,7 +653,16 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
+}
+
+.link-phone:hover,
+.link-phone:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.link-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .link-htmlacademy {
