@@ -764,7 +764,8 @@ body {
 .search-catalog__path {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 8px;
+  align-items: center;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -773,9 +774,48 @@ body {
   font-size: 16px;
 }
 
+.path__item {
+  position: relative;
+}
+
+.path__item:not(:first-child)::before {
+  position: absolute;
+  left: -8px;
+  bottom: 0;
+
+  content: "";
+  width: 8px;
+  height: 20px;
+
+  background-color: #FFFFFF;
+  mask-image: url("../images/icons/icon-breadcrums-arrow.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
 .path__link {
+  display: block;
+  padding: 0 10px;
+
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.path__item:first-child .path__link {
+  padding-left: 0;
+}
+
+.path__item:first-child .path__link::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  background-color: #FFFFFF;
+  mask-image: url("../images/icons/icon-breadcrums-house.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
 
 .form-search-catalog {
