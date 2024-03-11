@@ -297,8 +297,8 @@ body {
 
   background-image: url(../images/apron.svg), url(../images/background-image-1.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: bottom, center;
+  background-size: 101%, cover;
+  background-position: bottom -1px center, center;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
