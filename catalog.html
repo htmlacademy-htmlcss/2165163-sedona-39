@@ -73,35 +73,28 @@
 
               <input class="input--visually-hidden" type="checkbox" name="checkbox-wifi" id="checkbox-wifi-id">
               <label class="block-filter__desc-input" for="checkbox-wifi-id">Wi-Fi</label>
-
             </fieldset>
             <fieldset class="block-filter block-filter-housing">
               <legend class="block-filter__subtitle">Тип жилья:</legend>
 
-              <label class="block-filter__desc-input" for="input-housing-hotel-id">
-                <input type="radio" name="input-housing" value="hotel" id="input-housing-hotel-id" checked>
-                Гостиница
-              </label>
+              <input class="input--visually-hidden" type="radio" name="input-housing" value="hotel" id="input-housing-hotel-id" checked>
+              <label class="block-filter__desc-input" for="input-housing-hotel-id">Гостиница</label>
 
-              <label class="block-filter__desc-input" for="input-housing-motel-id">
-                <input type="radio" name="input-housing" value="motel" id="input-housing-motel-id">
-                Мотель
-              </label>
+              <input class="input--visually-hidden" type="radio" name="input-housing" value="motel" id="input-housing-motel-id">
+              <label class="block-filter__desc-input" for="input-housing-motel-id">Мотель</label>
 
-              <label class="block-filter__desc-input" for="input-housing-apartments-id">
-                <input type="radio" name="input-housing" value="apartments" id="input-housing-apartments-id">
-                Апартаменты
-              </label>
+              <input class="input--visually-hidden" type="radio" name="input-housing" value="apartments" id="input-housing-apartments-id">
+              <label class="block-filter__desc-input" for="input-housing-apartments-id">Апартаменты</label>
             </fieldset>
             <fieldset class="block-filter block-filter-price">
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
+              <div class="wrapper-input-price">
+                <label class="visually-hidden" for="price-min-id">Укажите нижний порог цены</label>
+                <input class="filter__input-price filter__input-price-min" type="number" name="price-min" id="price-min-id" placeholder="от">
 
-              <label class="visually-hidden" for="price-min-id">Укажите нижний порог цены</label>
-              <input class="filter__input-price-min" type="number" name="price-min" id="price-min-id" placeholder="от">
-
-              <label class="visually-hidden" for="price-max-id">Укажите верхний порог цены</label>
-              <input class="filter__input-price-max" type="number" name="price-max" id="price-max-id" placeholder="до">
-
+                <label class="visually-hidden" for="price-max-id">Укажите верхний порог цены</label>
+                <input class="filter__input-price filter__input-price-max" type="number" name="price-max" id="price-max-id" placeholder="до">
+              </div>
               <input type="range" name="price-range" min="0">
             </fieldset>
             <fieldset class="block-filter block-button">
