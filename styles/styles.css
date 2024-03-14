@@ -1043,6 +1043,8 @@ input[type=radio]:active + .block-filter__desc-input {
 
   border: none;
   border-radius: 4px;
+
+  transition: background-color 0.3s, outline 0.3s, color 0.3s;
 }
 
 .filter__button-submit {
@@ -1116,8 +1118,21 @@ input[type=radio]:active + .block-filter__desc-input {
   color: #333333;
 
   background-color: #FFFFFF;
-  border: 2px solid #E5E5E5;
+  outline: none;
+  border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+
+  transition: border 0.3s;
+}
+
+.button-sorting:hover,
+.button-sorting:focus-visible {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.button-sorting:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .view-items {
@@ -1129,34 +1144,72 @@ input[type=radio]:active + .block-filter__desc-input {
   list-style: none;
 }
 
+.button-view {
+  position: relative;
+
+  display: flex;
+  box-sizing: border-box;
+
+  width: 48px;
+  height: 48px;
+}
+
 .button-view::before {
   content: "";
-  display: block;
+  box-sizing: border-box;
 
-  width: 16px;
-  height: 14px;
-  padding: 15px 14px;
+  width: 48px;
+  height: 48px;
 
-  background-repeat: no-repeat;
-  background-position: center;
+  mask-repeat: no-repeat;
+  mask-position: center;
 
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
+  background-color: #000000;
 }
 
 .button-view-table::before {
-  background-image: url("../images/icons/icon-sorting-tile.svg");
+  mask-image: url("../images/icons/icon-sorting-tile.svg");
 }
 
 .button-view-extended::before {
-  background-image: url("../images/icons/icon-sorting-extended.svg");
+  mask-image: url("../images/icons/icon-sorting-extended.svg");
 }
 
 .button-view-list::before {
-  background-image: url("../images/icons/icon-sorting-list.svg");
+  mask-image: url("../images/icons/icon-sorting-list.svg");
 }
 
-.button-view--current::before {
+.button-view::after {
+  position: absolute;
+
+  content: "";
+
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+
+  transition: border-color 0.3s;
+}
+
+.button-view--current::after {
+  border-color: #000000;
+}
+
+.button-view:hover::after {
+  border-color: #000000;
+}
+
+.button-view:focus-visible {
+  outline: none;
+}
+
+.button-view:focus::after {
+  border-color: #68A2CA;
+}
+
+.button-view:active::after {
   border-color: #000000;
 }
 
@@ -1229,6 +1282,8 @@ input[type=radio]:active + .block-filter__desc-input {
   text-decoration: none;
 
   border-radius: 4px;
+
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .link-button--details {
@@ -1243,11 +1298,65 @@ input[type=radio]:active + .block-filter__desc-input {
   background-color: #7DB54F;
 }
 
+.link-button--details:hover,
+.link-button--details:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.link-button--favorites:hover,
+.link-button--favorites:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.link-button--favorites-added:hover,
+.link-button--favorites-added:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.link-button--details:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.link-button--favorites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.link-button--favorites-added:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .link-button--rating {
   font-weight: 400;
   color: #333333;
 
   background-color: #F2F2F2;
+}
+
+.catalog-item__stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-item__star {
+  width: 18px;
+  height: 17px;
+
+  background-color: #83B3D3;
+  mask-image: url("../images/icons/icon-star.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .catalog-pagination {
@@ -1274,6 +1383,8 @@ input[type=radio]:active + .block-filter__desc-input {
 
   background-color: #82B3D3;
   border-radius: 4px;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .pagination__link--current {
@@ -1289,6 +1400,17 @@ input[type=radio]:active + .block-filter__desc-input {
   color: #000000;
 
   background-color: transparent;
+}
+
+.pagination__link:not(.pagination__link--current):not(.pagination__link--middle):hover,
+.pagination__link:not(.pagination__link--current):not(.pagination__link--middle):focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.pagination__link:not(.pagination__link--current):not(.pagination__link--middle):active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Catalog styles. End */
