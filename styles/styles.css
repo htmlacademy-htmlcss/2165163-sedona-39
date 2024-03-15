@@ -211,12 +211,16 @@ body {
   mask-image: url("../images/icons/icon-search.svg");
 }
 
-.link--ico-favorites::before {
-  mask-image: url("../images/icons/icon-favorites.svg");
-}
-
 .link--ico-favorites {
   position: relative;
+}
+
+.link--ico-favorites .visually-hidden {
+  left: 1px;
+}
+
+.link--ico-favorites::before {
+  mask-image: url("../images/icons/icon-favorites.svg");
 }
 
 .link--ico-search:hover::before,
