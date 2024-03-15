@@ -1012,7 +1012,20 @@ input[type=radio]:active + .block-filter__desc-input {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.filter__input-price::-webkit-inner-spin-button {
+/* Для Chrome и Safari */
+.filter__input-price::-webkit-inner-spin-button,
+.filter__input-price::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+.filter__input-price {
+  -moz-appearance: textfield;
+}
+
+/* Для IE и Edge */
+.filter__input-price::-ms-clear {
   display: none;
 }
 
@@ -1250,6 +1263,7 @@ input[type=radio]:active + .block-filter__desc-input {
 .catalog-item__link {
   display: flex;
   grid-column: 1 / -1;
+
   text-decoration: none;
 }
 
