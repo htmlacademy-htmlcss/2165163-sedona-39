@@ -90,10 +90,10 @@
               <legend class="block-filter__subtitle">Стоимость, ₽:</legend>
               <div class="wrapper-input-price">
                 <label class="filter__label-price filter__label-price--min" for="price-min-id"><span class="visually-hidden">Укажите порог цены.</span>от</label>
-                <input class="filter__input-price filter__input-price-min" type="number" name="price-min" id="price-min-id" value="0">
+                <input class="filter__input-price filter__input-price-min" type="number" name="price-min" id="price-min-id" value="0" min="0">
 
                 <label class="filter__label-price filter__label-price--max" for="price-max-id"><span class="visually-hidden">Укажите порог цены.</span>до</label>
-                <input class="filter__input-price filter__input-price-max" type="number" name="price-max" id="price-max-id" value="9000">
+                <input class="filter__input-price filter__input-price-max" type="number" name="price-max" id="price-max-id" value="9000" min="0">
               </div>
               <input type="range" name="price-range" min="0">
             </fieldset>
