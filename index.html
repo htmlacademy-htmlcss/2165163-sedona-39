@@ -162,18 +162,24 @@
         </button>
         <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal__subtitle" for="data-arrival-id">Дата Заезда:</label>
-          <input class="modal__data data-arrival" type="date" name="data-arrival" id="data-arrival-id">
-          <span class="data-note note-error" style="visibility: visible;">Мы не можем отправить вас в прошлое.</span>
+          <div class="modal__wrapper-input">
+            <input class="modal__data data-arrival" type="text" name="data-arrival" id="data-arrival-id" value="27 апреля 2020">
+            <label class="modal__data-icon" for="data-arrival-id" aria-hidden="true"></label>
+            <span class="data-note note-error" style="visibility: visible;">Мы не можем отправить вас в прошлое.</span>
+          </div>
 
           <label class="modal__subtitle" for="data-out-id">Дата Выезда:</label>
-          <input class="modal__data data-out" type="date" name="data-out" id="data-out-id">
-          <span class="data-note data-out__note">На эти даты есть свободные номера. Пока есть.</span>
+          <div class="modal__wrapper-input">
+            <input class="modal__data data-out" type="text" name="data-out" id="data-out-id" value="1 сентября 2021">
+            <label class="modal__data-icon" for="data-out-id" aria-hidden="true"></label>
+            <span class="data-note data-out__note" style="visibility: visible;">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
 
-          <label class="modal__subtitle" for="number-adult-id">Взрослые:</label>
-          <input class="number-people number-adult" type="number" name="number-adult" id="number-adult-id" value="2">
+          <label class="modal__subtitle modal__subtitle-people" for="number-adult-id">Взрослые:</label>
+          <input class="number-people number-adult" type="number" name="number-adult" id="number-adult-id" min="0" value="2">
 
-          <label class="modal__subtitle" for="number-child-id">Дети:</label>
-          <input class="number-people number-child" type="number" name="number-child" id="number-child-id" value="2">
+          <label class="modal__subtitle modal__subtitle-people modal__subtitle-child" for="number-child-id">Дети:</label>
+          <input class="number-people number-child" type="number" name="number-child" id="number-child-id" min="0" value="2">
 
           <button class="modal__submit" type="submit">Найти</button>
         </form>
