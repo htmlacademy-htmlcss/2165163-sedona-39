@@ -154,6 +154,31 @@
         </ul>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search-hotel">
+        <h2 class="title modal-search__title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal__subtitle" for="data-arrival-id">Дата Заезда:</label>
+          <input class="modal__data data-arrival" type="date" name="data-arrival" id="data-arrival-id">
+          <span class="data-note note-error" style="visibility: visible;">Мы не можем отправить вас в прошлое.</span>
+
+          <label class="modal__subtitle" for="data-out-id">Дата Выезда:</label>
+          <input class="modal__data data-out" type="date" name="data-out" id="data-out-id">
+          <span class="data-note data-out__note">На эти даты есть свободные номера. Пока есть.</span>
+
+          <label class="modal__subtitle" for="number-adult-id">Взрослые:</label>
+          <input class="number-people number-adult" type="number" name="number-adult" id="number-adult-id" value="2">
+
+          <label class="modal__subtitle" for="number-child-id">Дети:</label>
+          <input class="number-people number-child" type="number" name="number-child" id="number-child-id" value="2">
+
+          <button class="modal__submit" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
