@@ -95,7 +95,16 @@
                 <label class="filter__label-price filter__label-price--max" for="price-max-id"><span class="visually-hidden">Укажите порог цены.</span>до</label>
                 <input class="filter__input-price filter__input-price-max" type="number" name="price-max" id="price-max-id" value="9000" min="0">
               </div>
-              <input type="range" name="price-range" min="0">
+              <div class="price-range">
+                <div class="price-range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle range-toggle-min" type="button">
+                    <span class="visually-hidden">Укажите минимальную цену</span>
+                  </button>
+                  <button class="range-toggle range-toggle-max" type="button">
+                    <span class="visually-hidden">Укажите максимальную цену</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="block-filter block-button">
               <button class="filter__button-submit" type="submit">Применить</button>
