@@ -1698,7 +1698,7 @@ input[type=radio]:active + .block-filter__desc-input {
   color: #FF5757;
 }
 
-.modal__submit {
+/* .modal__submit {
   grid-column: 1 / 5;
 
   margin-top: 48px;
@@ -1718,7 +1718,7 @@ input[type=radio]:active + .block-filter__desc-input {
 
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-}
+} */
 
 .number-child {
   justify-self: end;
