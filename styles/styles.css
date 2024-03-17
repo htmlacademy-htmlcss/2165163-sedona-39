@@ -1208,6 +1208,8 @@ input[type=radio]:active + .block-filter__desc-input {
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
 
+  cursor: pointer;
+
   transition: border 0.3s;
 }
 
