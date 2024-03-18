@@ -161,6 +161,7 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+
           <label class="modal__subtitle" for="data-arrival-id">Дата Заезда:</label>
           <div class="modal__wrapper-input">
             <input class="modal__data data-arrival" type="text" name="data-arrival" id="data-arrival-id" value="27 апреля 2020">
@@ -176,12 +177,27 @@
           </div>
 
           <label class="modal__subtitle modal__subtitle-people" for="number-adult-id">Взрослые:</label>
-          <input class="number-people number-adult" type="number" name="number-adult" id="number-adult-id" min="0" value="2">
+          <span class="number-input-button input-button-adult">
+            <input class="number-people number-adult" type="number" name="number-adult" id="number-adult-id" min="0" value="2">
+            <button class="number-button number-button-minus" type="button"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
+            <button class="number-button number-button-plus" type="button"><span class="visually-hidden">Увеличить количество взрослых</span></button>
+          </span>
 
-          <label class="modal__subtitle modal__subtitle-people modal__subtitle-child" for="number-child-id">Дети:</label>
-          <input class="number-people number-child" type="number" name="number-child" id="number-child-id" min="0" value="2">
+          <span class="label-tooltip label-tooltip-wrapper">
+            <label class="modal__subtitle modal__subtitle-people modal__subtitle-child label-tooltip" for="number-child-id">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </span>
+          <span class="number-input-button input-button-child">
+            <input class="number-people number-child" type="number" name="number-child" id="number-child-id" min="0" value="2">
+            <button class="number-button number-button-minus" type="button"><span class="visually-hidden">Уменьшить количество детей</span></button>
+            <button class="number-button number-button-plus" type="button"><span class="visually-hidden">Увеличить количество детей</span></button>
+          </span>
 
           <button class="modal__submit" type="submit">Найти</button>
+
         </form>
       </div>
     </div>
