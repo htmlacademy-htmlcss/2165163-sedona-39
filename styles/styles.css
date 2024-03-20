@@ -1357,10 +1357,10 @@ input[type="radio"]:active + .block-filter__desc-input {
   grid-template-columns: 1fr 1fr;
   grid-template-rows:
     212px
-    auto
-    min-content
     1fr
-    1fr;
+    min-content
+    auto
+    auto;
   gap: 16px 20px;
   width: 340px;
   padding: 20px 20px 21px;
