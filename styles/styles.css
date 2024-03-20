@@ -176,6 +176,7 @@ body {
 
 .menu-user {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   min-width: 45px;
   gap: 6px;
