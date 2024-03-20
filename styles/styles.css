@@ -1,4 +1,4 @@
-/* Font styles. Start */
+/* Font styles */
 
 @font-face {
   font-family: "PT Sans";
@@ -16,9 +16,7 @@
   font-display: swap;
 }
 
-/* Font styles. End */
-
-/* Basic styles. Start */
+/* Basic styles */
 
 html {
   height: 100%;
@@ -104,10 +102,7 @@ body {
   color: #333333;
 }
 
-/* Basic styles. End */
-
-/* Main page styles. Start */
-/* Header styles. Start */
+/* Header styles */
 
 .main-header {
   z-index: 1;
@@ -131,6 +126,7 @@ body {
 .logo-img {
   width: 100%;
   height: auto;
+
   vertical-align: middle;
 }
 
@@ -142,12 +138,14 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 31px;
+
   list-style: none;
 }
 
 .navigation-site .link {
   display: block;
   padding: 20px 13px;
+
   transition: color 0.3s;
 }
 
@@ -181,10 +179,10 @@ body {
   flex-wrap: wrap;
   flex-shrink: 0;
   gap: 6px;
-
   margin: 0;
   padding: 0;
   margin-right: 23px;
+
   list-style: none;
 }
 
@@ -196,10 +194,10 @@ body {
 .menu-user .link::before {
   content: "";
   display: block;
-
   width: 20px;
   height: 20px;
   padding: 22px 9px;
+
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: rgba(0, 0, 0, 1);
@@ -290,9 +288,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Header styles. End */
-
-/* Hero styles. Start */
+/* Hero styles */
 
 .hero {
   box-sizing: border-box;
@@ -313,9 +309,7 @@ body {
   height: auto;
 }
 
-/* Hero styles. End */
-
-/* Advantages styles. Start */
+/* Advantages styles */
 
 .advantages {
   padding-top: 69px;
@@ -348,14 +342,12 @@ body {
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
-
   min-height: 385px;
 }
 
 .advantages__item-list,
 .advantages__wrapper {
   flex-grow: 1;
-
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
@@ -381,13 +373,15 @@ body {
 .advantages__subtitle::after {
   position: absolute;
   bottom: -32px;
-  left: calc(50% - 30px);
+  left: 50%;
 
   content: "";
   width: 60px;
   height: 2px;
 
   background-color: rgba(0, 0, 0, 0.3);
+
+  transform: translateX(-50%);
 }
 
 .advantages__item-list--wide .advantages__subtitle::after {
@@ -410,9 +404,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-/* Advantages styles. End */
-
-/* Infrastructure styles. Start */
+/* Infrastructure styles */
 
 .infrastructure {
   padding-top: 64px;
@@ -431,7 +423,6 @@ body {
 .infrastructure__list {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
@@ -440,12 +431,10 @@ body {
 
 .infrastructure__item-list {
   flex-grow: 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 29px;
-
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
@@ -454,10 +443,6 @@ body {
 
 .infrastructure__item-list--bg-color-lightgray {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.infrastructure__subtitle {
-
 }
 
 .infrastructure__item-list::before {
@@ -484,9 +469,7 @@ body {
   mask-image: url("../images/icons/icon-souvenir.svg");
 }
 
-/* Infrastructure styles. End */
-
-/* Search styles. Start */
+/* Search styles */
 
 .search {
   padding: 96px 70px;
@@ -528,9 +511,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Search styles. End */
-
-/* Newsletter styles. Start */
+/* Newsletter styles */
 
 .newsletter {
   padding: 96px 70px 104px;
@@ -554,7 +535,7 @@ body {
   color: #FFFFFF;
 }
 
-.newsletter__form { /* Убирает пробел между input и button */
+.newsletter__form {
   display: flex;
   justify-content: center;
 }
@@ -625,9 +606,7 @@ body {
   background-color: #E5E5E5;
 }
 
-/* Newsletter styles. End */
-
-/* Footer styles. Start */
+/* Footer styles */
 
 .main-footer {
   padding: 40px 70px 30px;
@@ -638,7 +617,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
   min-height: 50px;
   margin: 0;
   padding: 0;
@@ -649,7 +627,6 @@ body {
 .socials-list {
   display: flex;
   flex-wrap: wrap;
-
   max-width: 141px;
   margin: 0;
   padding: 0;
@@ -665,7 +642,6 @@ body {
 .socials-list__link::before {
   content: "";
   display: block;
-
   width: 47px;
   height: 40px;
 
@@ -726,7 +702,6 @@ body {
 
 .link-htmlacademy {
   display: block;
-
   width: 115px;
   height: 33px;
 
@@ -747,12 +722,8 @@ body {
   background-color: rgba(117, 97, 87, 0.3);
 }
 
-/* Footer styles. End */
-/* Main page styles. End */
-
-
-/* Inner page. Start */
-/* Search-catalog styles. Start */
+/* Inner page */
+/* Search-catalog styles */
 
 .search-catalog {
   padding: 35px 70px 73px;
@@ -834,12 +805,14 @@ body {
 .path__link:not(.path__link[aria-current="page"]):hover,
 .path__link:not(.path__link[aria-current="page"]):hover::before {
   color: rgba(255, 255, 255, 0.6);
+
   opacity: 0.6;
 }
 
 .path__link:not(.path__link[aria-current="page"]):active,
 .path__link:not(.path__link[aria-current="page"]):active::before {
   color: rgba(255, 255, 255, 0.3);
+
   opacity: 0.3;
 }
 
@@ -915,8 +888,8 @@ input[type=radio] + .block-filter__desc-input::after {
   position: absolute;
   left: 4px;
   top: 7px;
-  content: none;
 
+  content: none;
   width: 12px;
   height: 10px;
 
@@ -932,9 +905,9 @@ input[type=radio] + .block-filter__desc-input::after {
 input[type=checkbox] + .block-filter__desc-input::before,
 input[type=radio] + .block-filter__desc-input::before {
   content: "";
-
   width: 20px;
   height: 20px;
+
   background-color: #FFFFFF;
   border-radius: 4px;
 
@@ -1164,8 +1137,9 @@ input[type=radio]:active + .block-filter__desc-input {
 }
 
 .filter__button-reset {
-  background-color: transparent;
   padding-bottom: 5px;
+
+  background-color: transparent;
 }
 
 .filter__button-reset:hover {
@@ -1180,9 +1154,7 @@ input[type=radio]:active + .block-filter__desc-input {
   color: rgba(255, 255, 255, 0.1);
 }
 
-/* Search-catalog styles. End */
-
-/* Catalog styles. Start */
+/* Catalog styles */
 
 .catalog {
   padding: 50px 70px 60px;
@@ -1236,6 +1208,7 @@ input[type=radio]:active + .block-filter__desc-input {
 
 .button-sorting:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
+
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1254,7 +1227,6 @@ input[type=radio]:active + .block-filter__desc-input {
 
   display: flex;
   box-sizing: border-box;
-
   width: 48px;
   height: 48px;
 }
@@ -1262,7 +1234,6 @@ input[type=radio]:active + .block-filter__desc-input {
 .button-view::before {
   content: "";
   box-sizing: border-box;
-
   width: 48px;
   height: 48px;
 
@@ -1288,10 +1259,10 @@ input[type=radio]:active + .block-filter__desc-input {
   position: absolute;
 
   content: "";
-
   box-sizing: border-box;
   width: 48px;
   height: 48px;
+
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 
@@ -1322,14 +1293,13 @@ input[type=radio]:active + .block-filter__desc-input {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
   margin: 0;
   padding: 0;
   margin-bottom: 39px;
   padding-bottom: 40px;
+  border-bottom: 1px solid #E6E6E6;
 
   list-style: none;
-  border-bottom: 1px solid #E6E6E6
 }
 
 .catalog-item {
@@ -1453,7 +1423,6 @@ input[type=radio]:active + .block-filter__desc-input {
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
-
   margin: 0;
   padding: 0;
 
@@ -1524,9 +1493,7 @@ input[type=radio]:active + .block-filter__desc-input {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* Catalog styles. End */
-
-/* Newsletter-inner styles. Start */
+/* Newsletter-inner styles */
 
 .newsletter-inner {
   background-image: none;
@@ -1541,10 +1508,7 @@ input[type=radio]:active + .block-filter__desc-input {
   color: #333333;
 }
 
-/* Newsletter-inner styles. End */
-/* Inner page. End */
-
-/* Modal container styles. Start */
+/* Modal container styles */
 
 .modal-container {
   z-index: 2;
@@ -1555,7 +1519,6 @@ input[type=radio]:active + .block-filter__desc-input {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 100%;
 
@@ -1574,7 +1537,6 @@ input[type=radio]:active + .block-filter__desc-input {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .modal-search-hotel {
@@ -1622,7 +1584,6 @@ input[type=radio]:active + .block-filter__desc-input {
   top: 0;
 
   content: "";
-
   display: block;
   width: 100%;
   height: 100%;
@@ -1678,12 +1639,11 @@ input[type=radio]:active + .block-filter__desc-input {
 
 .modal__data-icon {
   position: absolute;
+  top: 13px;
+  right: 20px;
 
   width: 20px;
   height: 20px;
-
-  top: 13px;
-  right: 20px;
 
   mask-image: url("../images/icons/icon-calendar.svg");
   mask-repeat: no-repeat;
@@ -1824,7 +1784,7 @@ input[type=radio]:active + .block-filter__desc-input {
 }
 
 .number-button:active::after {
- background-color: rgba(117, 97, 87, 0.3);
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .number-button:active.number-button::before {
@@ -1884,13 +1844,12 @@ input[type=radio]:active + .block-filter__desc-input {
 .tooltip-text {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  margin-top: 15px;
 
   display: none;
   box-sizing: border-box;
-  padding: 20px 18px 23px 22px;
   width: 256px;
+  margin-top: 15px;
+  padding: 20px 18px 23px 22px;
 
   font-size: 16px;
   line-height: 20px;
@@ -1899,18 +1858,23 @@ input[type=radio]:active + .block-filter__desc-input {
   background-color: rgba(51, 51, 51, 1);
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+
+  transform: translateX(-50%);
 }
 
 .tooltip-text::before {
   position: absolute;
+  left: 50%;
+  top: 0;
+
   display: block;
   content: "";
   width: 13px;
   height: 13px;
+
   background-color: rgba(51, 51, 51, 1);
-  left: 50%;
+
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  top: 0;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1957,6 +1921,7 @@ input[type=radio]:active + .block-filter__desc-input {
 .number-people::-webkit-inner-spin-button,
 .number-people::-webkit-outer-spin-button {
   -webkit-appearance: none;
+
   margin: 0;
 }
 
@@ -1969,5 +1934,3 @@ input[type=radio]:active + .block-filter__desc-input {
 .number-people::-ms-clear {
   display: none;
 }
-
-/* Modal container styles. End */
