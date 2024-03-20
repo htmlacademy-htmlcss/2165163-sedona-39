@@ -1578,8 +1578,10 @@ input[type=radio]:active + .block-filter__desc-input {
 }
 
 .modal-search__title {
-  text-align: left;
   margin-bottom: 64px;
+  padding-right: 60px;
+
+  text-align: left;
 }
 
 .modal-close-button {
