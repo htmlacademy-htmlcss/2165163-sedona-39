@@ -1340,11 +1340,11 @@ input[type=radio]:active + .block-filter__desc-input {
     212px
     auto
     min-content
-    36px
-    37px;
+    1fr
+    1fr;
   gap: 16px 20px;
   width: 340px;
-  padding: 20px;
+  padding: 20px 20px 21px;
 
   color: #333333;
 
@@ -1379,6 +1379,9 @@ input[type=radio]:active + .block-filter__desc-input {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 6px;
+  min-height: 36px;
 
   font-size: 16px;
   font-weight: 700;
@@ -1386,6 +1389,7 @@ input[type=radio]:active + .block-filter__desc-input {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   border-radius: 4px;
 
@@ -1446,6 +1450,7 @@ input[type=radio]:active + .block-filter__desc-input {
 
 .catalog-item__stars {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   align-items: center;
 
