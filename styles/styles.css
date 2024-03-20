@@ -151,12 +151,12 @@ body {
   transition: color 0.3s;
 }
 
-.navigation-site .link:hover,
-.navigation-site .link:focus {
+.navigation-site .link:not(.link[aria-current="page"]):hover,
+.navigation-site .link:not(.link[aria-current="page"]):focus {
   color: rgba(117, 97, 87, 1);
 }
 
-.navigation-site .link:active {
+.navigation-site .link:not(.link[aria-current="page"]):active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -831,14 +831,14 @@ body {
   mask-position: center;
 }
 
-.path__link:hover,
-.path__link:hover::before {
+.path__link:not(.path__link[aria-current="page"]):hover,
+.path__link:not(.path__link[aria-current="page"]):hover::before {
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.6;
 }
 
-.path__link:active,
-.path__link:active::before {
+.path__link:not(.path__link[aria-current="page"]):active,
+.path__link:not(.path__link[aria-current="page"]):active::before {
   color: rgba(255, 255, 255, 0.3);
   opacity: 0.3;
 }
